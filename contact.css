@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url("/images/contact.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+font-family: 'Merriweather Sans', sans-serif;
+/* font-family: 'Poppins', sans-serif; */
+
+}
+
+.flex{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+height:100vh;
+}
+
+.flex1{
+    display:flex;
+    flex-direction:column;
+   /* justify-content:end; */
+   
+}
+.form{
+    /* position:relative; */
+height:auto;
+    width:520px;
+padding:30px;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 25px ;
+}
+.heading{
+    font-size:30px;
+    /* margin:auto; */
+align-self:center;
+margin:20px;
+}
+input,select{
+    /* display: block; */
+    max-width:99%;
+    padding:5px;
+    margin:5px;
+    border:0;
+}
+input{
+    border:0;
+
+}
+label{
+    margin:10px;
+}
+
+.submit{
+    background-color:rgb(137, 137, 235);
+    align-self:start;
+    padding:10px 30px;
+    border:0;
+    /* margin:10px; */
+}
+
+#success{
+width:100vw;
+height:100vh;
+background-color: rgba(0, 0, 0, 0.79);
+position:absolute;
+top:0;
+display:none;
+
+}
+
+#display-box{
+    width:50vw;
+    height:auto;
+    background-color:rgb(159, 127, 127);
+    margin:auto;
+text-align: center;
+
+}
+
+#success button{
+    align-self:center;
+    padding:10px 25px;
+    border:0;
+    
+}
+@media only screen and (max-width: 520px){
+    .form{
+        width:420px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .form{
+        width:100vw;
+    }
+}
+.display{
+    display: none;
+}
+.red{
+    color:red;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@1,300&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="flex" id="form" method="get" >
+        
+        <div class="form flex1" >
+            <h1 class="heading"> Contact Form</h1>
+
+            <p id="nametxt" class="display">Username</p>
+            <input type="text" id="name" placeholder="Username">
+            <div id="name-error" class="red"></div>
+
+            <!-- <p class="gender-in"> -->
+                <p>
+            <label for="gender">Gender:</label>
+            <input type="radio" class="mfale" name="gender" value="male" > Male
+            <input type="radio" class="mfale" name="gender" value="female"> Female
+            </p>
+            <div id="gender-error" class="red"></div>
+
+
+            <label for="branch">Choose your Branch</label>
+            <select id="branch">
+                <option>CSE</option>
+                <option>CSIT</option>
+                <option>CS</option>
+                <option>IT</option>
+                <option>ECE</option>
+            </select>
+            <div id="branch-error" class="red"></div>
+
+
+
+            <p id="phn" class="display">Phone Number</p>
+
+            <input type="number" id="phone" placeholder="Phone Number">
+            <div id="phone-error" class="red"></div>
+
+
+            <p id="mail" class="display">Email</p>
+            <input type="text" id="email" placeholder="Email Id">
+            <div id="mail-error" class="red"></div>
+
+
+            <p id="pwd" class="display">Password</p>
+            <input type="password" id="password" placeholder="Password">
+            <div id="pwd-error" class="red"></div>
+
+
+            <p id="confrmpwd" class="display">Confirm password</p>
+            <input type="password" id="cnfrmpassword" placeholder="Confirm Password">
+            <div id="confrmpwd-error" class="red"></div>
+
+            <input class="submit" type="submit"  placeholder="Submit">
+            
+
+        </div>
+      
+    </form>
+    <div class="flx" id="success">
+        <div id="display-box">
+            <p>Your form has been successfully submitted.</p><br>
+            <button id="close">Close</button>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
